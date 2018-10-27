@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="calc-contain">
+    <form name="calculator">
+        <input type="text" name='answer'/>
+        <br>
+        <input type="button" value="1" onclick="calculator.answer.value +='1'"/>
+        <input type="button" value="2" onclick="calculator.answer.value +='2'"/>
+        <input type="button" value="3" onclick="calculator.answer.value +='3'"/>
+        <input type="button" value="4" onclick="calculator.answer.value +='4'"/>        
+        <input type="button" value="+" onclick="calculator.answer.value +='+'"/>
+        <br>
+        
+        <input type="button" value="5" onclick="calculator.answer.value +='5'"/>
+        <input type="button" value="6" onclick="calculator.answer.value +='6'"/>
+        <input type="button" value="7" onclick="calculator.answer.value +='7'"/>
+        <input type="button" value="8" onclick="calculator.answer.value +='8'"/>
+        <input type="button" value="-" onclick="calculator.answer.value +='-'"/>
+        <br>
+        <input type="button" value="9" onclick="calculator.answer.value +='9'"/>
+        <input type="button" value="0" onclick="calculator.answer.value +='0'"/>
+        <input type="button" value="*" onclick="calculator.answer.value +='*'"/>
+        <input type="button" value="/" onclick="calculator.answer.value +='/'"/>
+        <input type="button" value="=" onclick="calculator.answer.value =eval(calculator.answer.value)"/>
+        <input type="button" value="c" onclick="calculator.answer.value =' '"/>
+        <br>
+    </form>
+    </div>
+    <style>
+        #calc-contain {
+            position: relative;
+            width:400px;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin: 0px auto;
+            padding: 40px 40px 60px 40px;
+       }
+       input[type=button]{
+           background: grey;
+           width:40px;
+           font-size: 20px;
+           font-weight: 900;
+           border-radius:7px;
+           margin-left: 13px;
+           margin-top: 10px;
+
+       }
+
+       input[type=button]:hover{
+        background-color: blueviolet;
+        color: aqua;
+    }
+    input[type=button]:active {
+        background-color:#3e8e41;
+        box-shadow: goldenrod;
+        transform: translateY(4px);
+    }
+    
+    input[type=text]{
+           position: relative;
+           display: block;
+           margin:5px auto;
+           font-size: 20px;
+           box-shadow:4px 0px 12px burlywood;
+           width:90%;
+
+       }
+
+
+</style>
+</body>
+</html>
+
